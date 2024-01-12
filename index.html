@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Games,website">
+    <meta name="description" content="Game has Games">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Montserrat&family=Open+Sans&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Game over</title>
+</head>
+
+<body>
+    <div class="home">
+        <div class="wallPaper text-center overflow-hidden">
+            <img src="images/wraper.png" class="w-75" alt="">
+        </div>
+        <div class="navBack d-flex justify-content-center">
+            <nav id="nav_bar" class="navbar navbar-expand-lg text-white container shadow">
+                <div class="container-fluid">
+                    <div class="homeIcon">
+                        <img src="images/logo-sm.png" alt="logo">
+                        <h4 class="navbar-brand text-white d-inline-block" href="#">Game Reviews</h4>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                            <li class="nav-item">
+                                <a id="mmorpg" class="nav-link text-white" href="#">MMORPG</a>
+                            </li>
+                            <li class="nav-item">
+                                <a id="SHOOTER" class="nav-link text-white" href="#">SHOOTER</a>
+                            </li>
+                            <li class="nav-item">
+                                <a id="SAILING" class="nav-link text-white" href="#">SAILING</a>
+                            </li>
+                            <li class="nav-item">
+                                <a id="PERMADEATH" class="nav-link text-white" href="#">PERMADEATH</a>
+                            </li>
+                            <li class="nav-item">
+                                <a id="SUPERHERO" class="nav-link text-white" href="#">SUPERHERO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a id="PIXEL" class="nav-link text-white" href="#">PIXEL</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <section class="games">
+            <div class="spinner text-center pt-5">
+                <span class="loader text-center m-auto"></span>
+            </div>
+            <div class="container overflow-hidden">
+                <div class="row mt-4 g-3">
+                    <!-- <div class="col-md-3">
+                        <div>
+                            <div class="card" onclick="data.displayDetail(28);">
+                                <div class="p-3">
+                                    <img src="images/5.jpg" class="card-img-top w-100" alt="game">
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <h5 class="card-title d-inline-block">Card title</h5>
+                                        <span class="">Free</span>
+                                    </div>
+                                    <p class="card-text text-center">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                    <hr>
+                                    <div class="d-flex justify-content-between">
+                                        <p class="m-0 p-0 bg-secondary text-white">Category</p>
+                                        <p class="m-0 p-0 bg-secondary text-white fs-6">Platform</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+    </div>
+    <section class="detail position-relative d-none">
+        <h1 class="text-white ms-5 ps-5 py-3">Details Game</h1>
+        <i id="closeBtn" class="fa-solid fa-xmark text-white-50 position-absolute fs-3"></i>
+        <div class="container d-flex">
+             <div class="gameIcon w-25">
+                <img src="images/5.jpg" class="w-100" alt="game"> 
+            </div>
+            <div class="gameDesc text-white w-75 ms-5">
+                <h2>Title: <span>Diablo Immortal</span></h2>
+                <p>Category: <span id="Category" class="bg-info text-dark">MMOARPG</span></p>
+                <p>Platform: <span id="Platform" class="bg-info text-dark">Windows</span></p>
+                <p>Status: <span class="bg-info text-dark">Live</span></p>
+                <p id="description">The demon fighting doesn’t have to stop when you walk away from the computer thanks to Blizzard Entertainment’s Diablo Immortal. Built for mobile and also released on PC, the game fills in the gaps between Diablo II and III in an MMOARPG environment. Diablo Immortal picks up following the presumed death of the Archangel Tyrael, during which time mankind must deal with the fallout. One of the many problems are the fragments of the shattered Worldstone spread across the land, waiting for Diablo’s underlings to collect them in an attempt to bring about his return. Players can choose from one of six classes in Diablo Immortal. These are the classic Barbarian, the Crusader, the Demon Hunter, the Monk, the Necromancer, and the Wizard. All six classes features their own unique skills and abilities. The game also introduces six new bosses, ranging from The Skeleton King to the Glacial Colossus. Each offers players a unique challenge, and all are found in places filled with danger. So, players will want to be well prepared before taking them on.</p>
+                <button id="gameURL" class="btn btn-outline-warning">Show Game</button>
+            </div>
+        </div> 
+    </section>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="js/app.js"></script>
+</body>
+
+</html>

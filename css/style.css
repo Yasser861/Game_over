@@ -1,0 +1,99 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.wallPaper{
+    background-color: #32353A;
+    height: 200px;
+}
+nav{
+    background-color: #3A497B;
+    border-radius: 10px;
+}
+.navBack{
+    background-color: #32353A;
+}
+nav .collapse ul li a:hover{
+    color: rgb(13, 221, 221) !important;
+}
+nav .homeIcon img{
+    width: 50px;
+    height: 50px;
+}
+.navbar-fixed {
+    top: 0;
+    z-index: 100;
+  position: fixed;
+}
+.active_col{
+    color: aqua !important;
+}
+/* ================================================ */
+section{
+    background-color: #32353A;
+    min-height: 100vh;
+}
+section .card{
+    background-color: #32353A;
+    color: white;
+    transition: all 0.5s;
+    height: fit-content
+}
+section .card img{
+    filter: grayscale(1);
+    transition: all 0.5s;
+}
+section .card .card-body p#head{
+    color: grey;
+    height: 130px;
+    font-size: 14px;
+    /* background-color: aqua; */
+}
+section .card:hover{
+    transform: scale(1.05);
+}
+section .card:hover img{
+    filter: grayscale(0);
+}
+section .card:hover span{
+    background-color: rgb(41, 6, 236);
+}
+section .card div span{
+    background-color: #4A6792;
+    padding: 5px 10px;
+    margin: 0 5px;
+    border-radius: 3px;
+    transition: all 0.5s;
+    height: 30px;
+}
+section.games .card-body .card-text p{
+    font-size: 0.2rem ;
+}
+.loader {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 3px solid #FFF;
+    border-right: 3px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+  }
+  
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
+/* ============================================= */
+section.detail{
+    background-color: #32353A;
+    min-height: 100vh;
+}
+section.detail i{
+    top: 10px;
+    right: 40px;
+    cursor: pointer;
+}
